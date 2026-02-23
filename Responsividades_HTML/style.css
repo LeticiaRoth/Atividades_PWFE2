@@ -1,0 +1,43 @@
+:root{
+    --bg: #c28585;
+}
+
+/*
+.caixinha{
+    width: 1100px;
+    background-color: var(--bg);
+    padding: 20px;
+}
+
+*/
+
+.caixinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bg);
+    width: 80%;
+    min-height: 20vh; /*20 por cento do tamanho da view*/
+    padding: 2rem;/*Porque vou usar da root, valendo 16px pq uma 1rem vale 16px*/
+}
+
+section{
+    width: 100vw;/*100% da view*/
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+/*Quando o width for desse valor oq estiver aqui dentro será setado*/
+@media (max-width: 600px){
+    .caixinha{
+        background-color: aquamarine;
+        padding: 1rem;  /*Agora a rem te´ra 16px*/
+    }
+
+}
